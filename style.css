@@ -3,7 +3,8 @@ body {
   text-align: center;
   margin: 0;
   background-image: url("./images/guess_number_image.jpg");
-  background-size: cover;
+
+  object-fit: fill;
   background-repeat: no-repeat;
 }
 .header {
@@ -18,7 +19,6 @@ body {
   color: #1e3d59;
 }
 #wstep {
-  padding-top: 0.5rem;
   text-align: center;
   color: #1e3d59;
   margin-top: 1rem;
@@ -80,11 +80,49 @@ body {
     font-size: 1rem;
   }
   #nr_game {
+    margin-top: 2rem;
     width: 25%;
     height: 10vh;
     background-color: #f5f0e1;
     border-radius: 10px;
     font-size: 1rem;
     border: 3px solid #1e3d59;
+  }
+  .answer-box {
+    margin-top: 2rem;
+  }
+  #answer {
+    font-size: 2.5rem;
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #wstep {
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+  }
+  #check_it {
+    height: 10vh;
+    width: 25%;
+    border-radius: 10px;
+    border: 3px solid #73ad21;
+    font-size: 1rem;
+  }
+  #nr_game {
+    margin-top: 1rem;
+    width: 25%;
+    height: 10vh;
+    background-color: #f5f0e1;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 3px solid #1e3d59;
+  }
+  .answer-box {
+    margin-top: 1rem;
+  }
+  #answer {
+    font-size: 2rem;
+    top: 25%;
   }
 }
